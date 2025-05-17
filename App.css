@@ -1,0 +1,105 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.data-fetcher {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  background: #fefefe;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.data-fetcher h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #ff7e5f;
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ffcdb2;
+  border-radius: 10px;
+  width: 60%;
+  outline: none;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.search-bar input:focus {
+  border-color: #ffb4a2;
+  background-color: #fff6f3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.9rem;
+  text-align: center;
+}
+
+thead {
+  background-color: #ffb4a2;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff1ec;
+}
+
+tbody tr:hover {
+  background-color: #ffe5dc;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff5e3a;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.data-fetcher {
+  animation: fadeIn 0.6s ease-in-out;
+}
